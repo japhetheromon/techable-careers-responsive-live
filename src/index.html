@@ -2,6 +2,18 @@
 <html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="We teach Tech">
+    <meta name="keywords" content="learn html, data analytics, website design, fullstack developer course">
+    <meta name="author" content="Techable">
+    <meta name="rotots" content="index, follow">
+    <meta property="og:title" content="Techable">
+    <meta property="og:description" content="Learn Tech Skills to skill up">
+    <meta property="og:image" content="images/techable.png">
+    <meta name="twitter:title" content="Techable">
+    <meta name="twitter:description" content="Learn Tech Skills to skill up">
+    <meta name="twitter:image" content="/images/techable.png">
     <title>My First Web Page</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +24,8 @@
 
 <body>
     <div id="navbar">
-        <img id="logo" src="images/techable.png" alt="techable logo">
+        <img id="logo-mobile" src="images/logo-mobile-dark.jpg" alt="techable logo">
+        <img id="logo" src="images/techable.png" alt="techable logo ">
 
     </div>
     <img id="banner" src="images/banner.jpg" alt="banner">
@@ -42,7 +55,7 @@
                 </ol>
             </div>
             <div id="team">
-                <img id="team-img" src="images/team.jpg" alt="Team">
+                <img id="team-img" src="images/team.jpg" height="100px" alt="Team">
             </div>
 
         </div>
@@ -50,6 +63,32 @@
 
         <h2>Job Opportunities</h2>
         <div id="jobs">
+            <div id="jobs-list">
+                <div class="job">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-detail">Benin City, Nigeria</div>
+                    <div class="job-detail">N340,000</div>
+                    <div class="job-detail">Posted on 3rd March 2024</div>
+                </div>
+                <div class="job">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-detail">Benin City, Nigeria</div>
+                    <div class="job-detail">N340,000</div>
+                    <div class="job-detail">Posted on 3rd March 2024</div>
+                </div>
+                <div class="job">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-detail">Benin City, Nigeria</div>
+                    <div class="job-detail">N340,000</div>
+                    <div class="job-detail">Posted on 3rd March 2024</div>
+                </div>
+                <div class="job">
+                    <div class="job-title">Frontend Developer</div>
+                    <div class="job-detail">Benin City, Nigeria</div>
+                    <div class="job-detail">N340,000</div>
+                    <div class="job-detail">Posted on 3rd March 2024</div>
+                </div>
+            </div>
             <table id="jobs-table">
                 <tr class="jobs-header-row">
                     <th rowspan="2">Job Title</th>
@@ -102,11 +141,8 @@
     <div id="application">
         <h2>Submit your application</h2>
 
-        <form action="https://formbold.com/s/3wvKl" 
-            method="POST"
-            enctype="multipart/form-data"
-            id="application-form">
-            
+        <form action="https://formbold.com/s/3wvKl" method="POST" enctype="multipart/form-data" id="application-form">
+
             <div class="form-group">
                 <label for="name">Full Name</label><br>
                 <input type="text" id="name" name="Full Name" required placeholder="John Doe">
@@ -124,7 +160,7 @@
 
             <div class="form-group">
                 <label for="dob">Date of Birth</label><br>
-                <input type="date" id="dob" name="dob" required >
+                <input type="date" id="dob" name="dob" required>
             </div>
 
             <div class="form-group">
@@ -140,20 +176,21 @@
 
             <div class="form-group">
                 <label for="resume">Upload Resume</label> <br>
-                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required >
+                <input type="file" id="resume" name="resume" accept=".pdf, .doc, .docx" required>
             </div>
 
             <div class="form-group">
                 <label for="coverletter">Cover Letter</label><br>
-                <textarea id="coverletter" name="coverletter" rows="5" required placeholder="Explain what makes you suitable for the job..." ></textarea>
+                <textarea id="coverletter" name="coverletter" rows="5" required
+                    placeholder="Explain what makes you suitable for the job..."></textarea>
             </div>
 
             <div class="form-group">
                 <label for="terms">
-                    <input type="checkbox" id="terms" name="terms" >
+                    <input type="checkbox" id="terms" name="terms">
                     I agree to the terms and conditions
-                </label> 
-                
+                </label>
+
             </div>
 
             <div class="form-group">
